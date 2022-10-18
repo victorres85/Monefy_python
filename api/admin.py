@@ -4,7 +4,7 @@ from .models import Account
 
 @admin.register(Account)
 class AccountAdmin (admin.ModelAdmin):
-    pass
+    list_display = ['name']
 
 
 # Register your models here.
